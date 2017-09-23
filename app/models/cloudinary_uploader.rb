@@ -2,7 +2,7 @@ class CloudinaryUploader < CarrierWave::Uploader::Base
   include CarrierWave::Compatibility::Paperclip
   include Cloudinary::CarrierWave
 
-  process convert: 'png'
+  # process convert: 'png'
   # Spree looks in attachment#errors, so just delegate to model#errors
   delegate :errors, to: :model
   delegate :after_save, to: :model
